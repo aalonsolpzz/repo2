@@ -1,0 +1,12 @@
+#Function to calculate x, v and a of object in MRUA
+print("in MRUA, an object is launched with an inital velocity with costant acceleration from initial position=0")
+initial_velocity = input("Please introduce a value for the initial velocity (V0) in m/s: ")
+float(initial_velocity)
+acceleration = input("Please introduce a value for acceleration (a) in m/ss: ")
+float(acceleration)
+time = input("Please introduce a value for time (t) in seconds: ")
+float(time)
+Velocity = (float(acceleration)*float(time) + float(initial_velocity))
+print ("Know that the formula for velocity is: V(t)=V0 +at. For the chosen time the velocity in m/s is: ", Velocity)
+Position = (0.5*float(acceleration)*float(time)**2 + float(initial_velocity)*float(time))
+print ("Know that the formula for position is: X(t)=0.5att+V0t+X0. For the chosen time the position in m is: ", Position)
